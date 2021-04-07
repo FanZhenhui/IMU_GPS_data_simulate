@@ -1,0 +1,10 @@
+function m=Trans_att2attm(v)
+m(1,1)=cos(v(2))*cos(v(3))+sin(v(2))*sin(v(3))*sin(v(1));
+m(1,2)=sin(v(3))*cos(v(1));
+m(1,3)=sin(v(2))*cos(v(3))-cos(v(2))*sin(v(3))*sin(v(1));
+m(2,1)=-cos(v(2))*sin(v(3))+sin(v(2))*cos(v(3))*sin(v(1));
+m(2,2)=cos(v(3))*cos(v(1));
+m(2,3)=-sin(v(2))*sin(v(3))-cos(v(2))*cos(v(3))*sin(v(1));
+m(3,1)=-sin(v(2))*cos(v(1));
+m(3,2)=sin(v(1));
+m(3,3)=cos(v(2))*cos(v(1));
